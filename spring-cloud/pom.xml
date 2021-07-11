@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.shin.study</groupId>
+        <artifactId>shin-study-demo</artifactId>
+        <version>0.1</version>
+    </parent>
+
+    <groupId>com.shin.study</groupId>
+    <artifactId>spring cloud</artifactId>
+    <properties>
+        <spring.cloud>2020.0.3</spring.cloud>
+        <spring.cloud.alibaba>2021.1</spring.cloud.alibaba>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--      Spring Cloud 依赖项管理      -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--      Spring Cloud Alibaba 依赖项管理      -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <modules>
+        <module>nacos-demo-parent</module>
+    </modules>
+</project>
