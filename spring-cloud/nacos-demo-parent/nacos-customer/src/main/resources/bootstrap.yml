@@ -6,5 +6,7 @@ spring:
         file-extension: yml
   application:
     name: nacosCustomer
+  profiles:
+    active: @profiles.active@
 server:
   port: 8081

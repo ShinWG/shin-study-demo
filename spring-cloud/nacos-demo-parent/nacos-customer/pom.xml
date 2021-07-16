@@ -12,6 +12,7 @@
     <artifactId>nacos-customer</artifactId>
 
     <dependencies>
+        <!--  负载均衡组件  -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-loadbalancer</artifactId>
