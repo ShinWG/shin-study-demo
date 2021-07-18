@@ -52,6 +52,11 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- spring boot web-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!--   配置中心依赖     -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>

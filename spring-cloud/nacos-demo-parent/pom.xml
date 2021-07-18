@@ -19,6 +19,11 @@
     <artifactId>nacos-demo-parent</artifactId>
 
     <dependencies>
+        <!-- spring boot web-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!--   配置中心依赖     -->
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
@@ -28,11 +33,6 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
-        </dependency>
-        <!-- 支持 bootstrap 配置文件 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
     </dependencies>
 </project>

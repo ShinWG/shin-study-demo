@@ -42,4 +42,18 @@
         <module>nacos-demo-parent</module>
         <module>spring-cloud-gateway</module>
     </modules>
+
+    <dependencies>
+        <!-- 支持 bootstrap 配置文件 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
+        </dependency>
+
+        <!--  负载均衡组件  -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-loadbalancer</artifactId>
+        </dependency>
+    </dependencies>
 </project>
