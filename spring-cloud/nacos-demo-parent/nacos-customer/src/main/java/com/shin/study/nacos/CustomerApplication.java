@@ -18,6 +18,7 @@ import org.springframework.web.client.RestTemplate;
  * @date: 2021/7/15 17:21
  */
 @SpringBootApplication
+// 启用服务发现
 @EnableDiscoveryClient
 public class CustomerApplication {
 
