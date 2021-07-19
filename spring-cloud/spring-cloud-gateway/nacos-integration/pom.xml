@@ -3,25 +3,19 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>spring cloud</artifactId>
+        <artifactId>spring-cloud-gateway</artifactId>
         <groupId>com.shin.study</groupId>
         <version>0.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>spring-cloud-gateway</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>nacos-integration</module>
-    </modules>
-
+    <artifactId>nacos-integration</artifactId>
 
     <dependencies>
-        <!-- spring cloud gateway -->
+        <!--  注册服务依赖  -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
     </dependencies>
-
 </project>
